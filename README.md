@@ -20,13 +20,21 @@ If you want to change any of these locations, then go ahead and just change thes
 
 ## installing packages
 There are a number of ways to install packages.
-1. From interactive R, you can install open source packages stored on R's CRAN repository.
-```R
-install.packages('devtools')```
-2. Using the additional `devtools` package, you can install from other sources (including github)
-```devtools::install_github('kater-s/intro_to_r')```
-1. From the terminal, use `R CMD INSTALL`. This is useful if you want to script an install, or install from local (packages you have made).
-```R CMD INSTALL --help```
+- From interactive R, you can install open source packages stored on R's CRAN repository.
+```
+R
+install.packages('devtools')
+```
+
+- Using the additional `devtools` package, you can install from other sources (including github)
+```
+devtools::install_github('kater-s/intro_to_r')
+```
+
+- From the terminal, use `R CMD INSTALL`. This is useful if you want to script an install, or install from local (packages you have made).
+```
+R CMD INSTALL --help
+```
 
 > If you want to follow this demo along, I'm using:
 > R version 3.4.0
