@@ -15,8 +15,8 @@ pacaur -S r
 ```sudo R```
 3. Check where R is going to install its packages
 ```Sys.getenv()```
-`R_LIBS_USER` is where your packages go by default when you're not sudo, `R_LIBS_SOMTHING` is where they go when you are. This is important because there are a number of ways of installing packages in R, and not all of them allow you to specify where to put them!
-If you want to change any of these locations, then
+`R_LIBS_USER` is where your packages go by default when you're not sudo, `R_HOME` is where they go when you are. This is important because there are a number of ways of installing packages in R, and not all of them allow you to specify where to put them!
+If you want to change any of these locations, then go ahead and just change these environment variables interactively or in your `.rprofile` file.
 
 ## installing packages
 There are a number of ways to install packages.
@@ -29,10 +29,10 @@ install.packages('devtools')```
 ```R CMD INSTALL --help```
 
 > If you want to follow this demo along, I'm using:
-> R version 
+> R version 3.4.0
 > The following packages:
 > - tidyverse (note one of the dependencies here requires gcc-fortran. Don't ask. Really, don't)
-> - 
+> - nycflights13
 
 # what R can do
 R started life as a stats language. Because it's pretty easy to get started, and because it contains a lot of pre-written statistical stuff, lots of statiticians use it. As their data requirements have grown, so have the capabilities of R. Some of these things are good, and some are not!
